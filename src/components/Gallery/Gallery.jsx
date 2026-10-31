@@ -1,5 +1,4 @@
 import { Card } from 'components/Card/Card';
-import React from 'react';
 
 export const Gallery = ({ movies }) => {
   return (

@@ -6,6 +6,7 @@
 
 # dependencies
 /node_modules
+/.npm-cache
 /.pnp
 .pnp.js
 
@@ -14,6 +15,7 @@
 
 # production
 /build
+/dist
 
 # misc
 .env

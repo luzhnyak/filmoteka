@@ -3,7 +3,7 @@ import AppBar from 'components/AppBar/AppBar';
 import { Loader } from 'components/Loader/Loader';
 import { Suspense } from 'react';
 import { Toaster } from 'react-hot-toast';
-import { Outlet } from 'react-router-dom/dist';
+import { Outlet } from 'react-router-dom';
 
 export const SharedLayout = () => {
   return (

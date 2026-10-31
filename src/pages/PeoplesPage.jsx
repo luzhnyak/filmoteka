@@ -1,4 +1,3 @@
-import React from 'react';
 
 const PeoplesPage = () => {
   return <div>PeoplesPage</div>;

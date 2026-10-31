@@ -1,6 +1,6 @@
 import { Back } from 'components/Back/Back';
 import { Loader } from 'components/Loader/Loader';
-import React, { Suspense, useEffect, useRef } from 'react';
+import { Suspense, useEffect, useRef } from 'react';
 import { NavLink, Outlet, useLocation, useParams } from 'react-router-dom';
 import { useFetchPersonByIdQuery } from 'redux/api';
 import noPoster from '../images/no-poster.jpg';

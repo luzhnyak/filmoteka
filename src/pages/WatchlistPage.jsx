@@ -1,6 +1,5 @@
 import { Gallery } from 'components/Gallery/Gallery';
 // import { Loader } from 'components/Loader/Loader';
-import React from 'react';
 import { useSelector } from 'react-redux';
 
 const WatchlistPage = () => {

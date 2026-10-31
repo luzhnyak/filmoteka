@@ -1,5 +1,4 @@
 import FormAuth from 'components/FormAuth/FormAuth';
-import React from 'react';
 import { useDispatch } from 'react-redux';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import { setUser } from 'redux/userSlice';

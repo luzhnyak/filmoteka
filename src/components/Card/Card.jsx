@@ -1,5 +1,4 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom/dist';
+import { Link, useLocation } from 'react-router-dom';
 import noPoster from '../../images/no-poster.jpg';
 
 export const Card = ({ movie: { id, title, poster_path } }) => {
