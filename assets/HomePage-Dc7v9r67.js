@@ -1,0 +1,1 @@
+import{b as e,d as t,l as n,t as r,u as i}from"./index-U-AtK8I8.js";import{r as a,t as o}from"./react-DvXU6kJ2.js";var s=a(o()),c=e(),l=()=>{let{data:e,isLoading:a,error:o}=n(),l=e?.results??[];return(0,s.useEffect)(()=>{o&&i.error(o.data.message)},[o]),(0,c.jsxs)(`div`,{children:[a&&(0,c.jsx)(t,{}),l.length!==0&&(0,c.jsx)(r,{movies:l})]})};export{l as default};
