@@ -1,1 +1,0 @@
-import{b as e}from"./index-U-AtK8I8.js";var t=e(),n=()=>(0,t.jsx)(`h1`,{children:`Page not found`});export{n as default};

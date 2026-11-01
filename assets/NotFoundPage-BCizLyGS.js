@@ -1,0 +1,1 @@
+import{b as e}from"./index-C_E_6uoZ.js";var t=e(),n=()=>(0,t.jsx)(`h1`,{children:`Page not found`});export{n as default};
