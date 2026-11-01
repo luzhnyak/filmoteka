@@ -1,5 +1,5 @@
 import { Loader } from 'components/Loader/Loader';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useFetchMovieVideosByIdQuery } from 'redux/api';
 import ReactPlayer from 'react-player';
@@ -7,6 +7,7 @@ import toast from 'react-hot-toast';
 
 const Videos = () => {
   const { movieId } = useParams();
+  const [playingVideoKey, setPlayingVideoKey] = useState(null);
 
   const { data, isLoading, error } = useFetchMovieVideosByIdQuery(movieId, {
     skip: !movieId,
@@ -34,6 +35,13 @@ const Videos = () => {
             <ReactPlayer
               key={video.key}
               src={`https://www.youtube.com/watch?v=${video.key}`}
+              playing={playingVideoKey === video.key}
+              onPlay={() => setPlayingVideoKey(video.key)}
+              onPause={() =>
+                setPlayingVideoKey(current =>
+                  current === video.key ? null : current
+                )
+              }
             />
           );
         })}
